@@ -2,12 +2,12 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { EmotionCache } from "@emotion/cache";
 import { CacheProvider } from "@emotion/react";
-import { DefaultSeo } from "next-seo";
+// import { DefaultSeo } from "next-seo";
 import { AppProps } from "next/app";
 import Head from "next/head";
 import "@fontsource/lexend/latin.css";
 
-import defaultSEOConfig from "../../next-seo.config";
+// import defaultSEOConfig from "../../next-seo.config";
 import Layout from "components/layout";
 import createEmotionCache from "styles/createEmotionCache";
 import customTheme from "styles/customTheme";
@@ -33,7 +33,7 @@ const MyApp = ({
             content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
           />
         </Head>
-        <DefaultSeo {...defaultSEOConfig} />
+        {/* <DefaultSeo {...defaultSEOConfig} /> */}
         <Layout>
           <Component {...pageProps} />
         </Layout>
